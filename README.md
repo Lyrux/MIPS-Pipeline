@@ -6,3 +6,9 @@ MIPS Pipeline Instruction Execute Stage implementation in Verilog including with
 - **Developed by:** Christian Ruelas, Cirena Arabit, Jonathan Kwong
 - **Course:** ECE 4300 - Computer Architecture
 - **Assignment**: MIPS Pipeline Instruction Execute
+
+## Execute Stage Timing Diagram
+### Binary Representation
+![Execute Binary Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Execute%20(binary).png)
+## Decimal Representation
+![Execute Decimal Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Execute%20(decimal).png)
