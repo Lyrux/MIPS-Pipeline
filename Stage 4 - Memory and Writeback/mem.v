@@ -7,7 +7,7 @@ then read_data is unaltered, and instead, the value in the current address is ch
 module data_memory (
    input wire [31:0] addr, // Memory Address
    input wire [31:0] write_data, // Memory Address Contents
-   input wire memread, memwrite, // refer to Lab 2-2 Figure 2.2
+   input wire memread, memwrite, clk,// refer to Lab 2-2 Figure 2.2
    output reg [31:0] read_data // Output of Memory Address Contents
 );
 // Register Declaration
@@ -18,7 +18,7 @@ module data_memory (
       read_data <= 0;
       //  Initialize DMEM[0-5] from data.txt
       //  This is testing the MIPS datapath (lab 6)
-      $readmemb("data.txt",DMEM);
+      $readmemb("data.txt", DMEM);
       for (i = 0; i < 6; i = i + 1)
       //$display(DMEM[i]);
       $display("\tDMEM[%0d] = %0b", i, DMEM[i]);
@@ -38,8 +38,8 @@ module data_memory (
       $display("\tDMEM[%0d] = %0d", 255, DMEM[255]);
       */
    end
-      
-   always@(addr) begin
+        
+   always@(posedge clk) begin
    //finish this thread. Hint: Requires 2 if statements
       if (memread) // load
       begin
@@ -49,6 +49,7 @@ module data_memory (
       if (memwrite) // store
       begin
          DMEM[addr] <= write_data; //writes data to address specified by addr wire
-      end
+     end
    end
+
 endmodule // data_memory
