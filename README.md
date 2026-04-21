@@ -1,5 +1,5 @@
-# MIPS Pipeline Execute Stage
-MIPS Pipeline Instruction Execute Stage implementation in Verilog including with timing diagrams.
+# MIPS Pipeline
+MIPS Pipeline implementation in Verilog including with timing diagrams.
 
 ## Assignment Details
 
