@@ -18,7 +18,7 @@ module mips_pipeline_TB;
     initial begin
         rst = 1;
         #15 rst = 0;
-        #500 $finish;
+        #1000 $finish;
     end
 
 endmodule
