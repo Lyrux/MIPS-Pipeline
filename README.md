@@ -26,6 +26,7 @@ MIPS Pipeline implementation in Verilog including with timing diagrams.
 ## MIPS Pipeline Timing Diagram
 ### Decimal Representation
 ![MIPS Pipeline Decimal Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20MIPS%20Pipeline%20(decimal).png)
+<img width="1474" height="750" alt="image" src="https://github.com/user-attachments/assets/89e7eebf-bbc0-4e67-98e1-c4ca2babf4f0" />
 
 ## Execute Stage Timing Diagram
 ### Binary Representation
