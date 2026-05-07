@@ -23,6 +23,13 @@ MIPS Pipeline implementation in Verilog including with timing diagrams.
 ## Instruction Decode Timing Diagram
 -->
 
+## MIPS Pipeline Optimization Timing Diagram
+### Binary Representation
+![Optimization Decimal Timing Diagram Part 1](Timing%20Diagrams/Timing%20Diagram%20-%20Optimization%20(Binary).png)
+![Optimization Decimal Timing Diagram Part 2](Timing%20Diagrams/Timing%20Diagram%20-%20Optimization%202%20(Binary).png)
+![Optimization Decimal Timing Diagram Part 3](Timing%20Diagrams/Timing%20Diagram%20-%20Optimization%203%20(Binary).png)
+
+
 ## MIPS Pipeline Timing Diagram
 ### Decimal Representation
 ![MIPS Pipeline Decimal Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20MIPS%20Pipeline%20(decimal).png)
