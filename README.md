@@ -19,10 +19,9 @@ MIPS Pipeline implementation in Verilog including timing diagrams.
 -->
 ### Binary Representation
 
-<img width="1548" height="661" alt="Screenshot 2026-05-12 165610" src="https://github.com/user-attachments/assets/32d99473-ec81-4453-8b6a-b75b6b048bef" />
-<img width="1551" height="707" alt="Screenshot 2026-05-12 165624" src="https://github.com/user-attachments/assets/c39ba4ee-b945-451e-adc9-82d808569bdb" />
-<img width="1545" height="659" alt="Screenshot 2026-05-12 165651" src="https://github.com/user-attachments/assets/6e1eaeb2-c603-44cb-93a5-b415cdcb7bfb" />
+<img width="1550" height="659" alt="op_sim1" src="https://github.com/user-attachments/assets/b5e706fa-44d1-40cc-a927-87865519b646" />
 
+<img width="1545" height="657" alt="op_sim2" src="https://github.com/user-attachments/assets/b15ad08b-c455-40dd-87ed-72b2d33ba366" />
 
 
 </details>
