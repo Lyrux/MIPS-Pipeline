@@ -31,18 +31,12 @@ MIPS Pipeline implementation in Verilog including timing diagrams.
 <details>
 <summary><strong>View MIPS Pipeline Timing Diagram</strong></summary>
 
-<img width="1550" height="666" alt="unop_sim1" src="https://github.com/user-attachments/assets/4ee1e5ab-a765-427d-9c23-5b0e6d9c5c4d" />
+<img width="1547" height="659" alt="unop_sim1" src="https://github.com/user-attachments/assets/11cddbc0-a4e1-4f1b-be70-264ba4fd16b0" />
 
-<img width="1550" height="671" alt="unop_sim2" src="https://github.com/user-attachments/assets/abbdd7c5-8063-48ca-9b62-e076731d6e26" />
+<img width="1547" height="656" alt="unop_sim2" src="https://github.com/user-attachments/assets/22c00710-379f-44f9-8b2a-10434f235957" />
 
-<img width="1550" height="653" alt="unop_sim3" src="https://github.com/user-attachments/assets/32555ec0-70a2-4359-bf1c-c4a457006fc0" />
+<img width="1548" height="659" alt="unop_sim3" src="https://github.com/user-attachments/assets/e363355e-7e7c-4895-952e-80c0b6ae48e3" />
 
-
-### Decimal Representation
-
-![MIPS Pipeline Decimal Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20MIPS%20Pipeline%20(decimal).png)
-
-<img width="1474" height="750" alt="MIPS Pipeline Decimal Timing Diagram" src="https://github.com/user-attachments/assets/89e7eebf-bbc0-4e67-98e1-c4ca2babf4f0" />
 
 </details>
 
