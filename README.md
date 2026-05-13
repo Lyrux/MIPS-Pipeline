@@ -19,11 +19,11 @@ MIPS Pipeline implementation in Verilog including timing diagrams.
 -->
 ### Binary Representation
 
-![Optimization Binary Timing Diagram Part 1](Timing%20Diagrams/Timing%20Diagram%20-%20Optimization%20(Binary).png)
+<img width="1548" height="661" alt="Screenshot 2026-05-12 165610" src="https://github.com/user-attachments/assets/32d99473-ec81-4453-8b6a-b75b6b048bef" />
+<img width="1551" height="707" alt="Screenshot 2026-05-12 165624" src="https://github.com/user-attachments/assets/c39ba4ee-b945-451e-adc9-82d808569bdb" />
+<img width="1545" height="659" alt="Screenshot 2026-05-12 165651" src="https://github.com/user-attachments/assets/6e1eaeb2-c603-44cb-93a5-b415cdcb7bfb" />
 
-![Optimization Binary Timing Diagram Part 2](Timing%20Diagrams/Timing%20Diagram%20-%20Optimization%202%20(Binary).png)
 
-![Optimization Binary Timing Diagram Part 3](Timing%20Diagrams/Timing%20Diagram%20-%20Optimization%203%20(Binary).png)
 
 </details>
 
