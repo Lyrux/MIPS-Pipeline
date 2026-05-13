@@ -4,15 +4,12 @@ module mips_pipeline(
     input wire clk, rst
 );
 
-    // ===========================================================
     // IF/ID latch outputs
-    // ===========================================================
+
     wire [31:0] if_id_instr;
     wire [31:0] if_id_pc;           // NPC = PC+4 out of IF/ID latch
 
-    // ===========================================================
     // ID/EX latch outputs (from decode stage)
-    // ===========================================================
     wire [1:0]  id_ex_wb;           // {RegWrite, MemtoReg}
     wire [2:0]  id_ex_mem;          // {Branch, MemRead, MemWrite}
     wire [3:0]  id_ex_execute;      // {RegDst, ALUSrc, ALUOp[1:0]}
@@ -23,7 +20,7 @@ module mips_pipeline(
     wire [4:0]  id_ex_instr_20_16;  // rt field
     wire [4:0]  id_ex_instr_15_11;  // rd field
 
-    // Slice id_ex_execute into individual execute control signals
+    // Parse id_ex_execute into individual execute control signals
     wire        regdst     = id_ex_execute[3];
     wire        alusrc     = id_ex_execute[2];
     wire [1:0]  alu_op     = id_ex_execute[1:0];
@@ -31,9 +28,8 @@ module mips_pipeline(
     // funct field = low 6 bits of instruction = low 6 bits of sign_ext
     wire [5:0]  instr_0500 = id_ex_sign_ext[5:0];
 
-    // ===========================================================
+    
     // EX/MEM latch outputs (from execute stage)
-    // ===========================================================
     wire [1:0]  wb_ctlout;
     wire        branch;
     wire        memread;
@@ -44,9 +40,8 @@ module mips_pipeline(
     wire [31:0] rdata2out;
     wire [4:0]  five_bit_muxout;
 
-    // ===========================================================
+
     // MEM/WB latch outputs (from memory stage)
-    // ===========================================================
     wire        MEM_PCSrc;
     wire        MEM_WB_regwrite;
     wire        MEM_WB_memtoreg;
@@ -57,9 +52,7 @@ module mips_pipeline(
     // WB mux output fed back to decode
     wire [31:0] mem_write_data;
 
-    // ===========================================================
-    // FETCH STAGE
-    // ===========================================================
+    // FETCH module
     fetch instr_fetch_stage(
         .clk           (clk),
         .rst           (rst),
@@ -69,9 +62,8 @@ module mips_pipeline(
         .if_id_pc      (if_id_pc)
     );
 
-    // ===========================================================
-    // DECODE STAGE
-    // ===========================================================
+
+    // DECODE module
     decode decode_stage(
         .clk                    (clk),
         .rst                    (rst),
@@ -94,9 +86,8 @@ module mips_pipeline(
         .id_ex_instr_bits_15_11 (id_ex_instr_15_11)
     );
 
-    // ===========================================================
-    // EXECUTE STAGE
-    // ===========================================================
+
+    // EXECUTE module
     execute execute_stage(
         .clk        (clk),
         .rst        (rst),
@@ -127,9 +118,8 @@ module mips_pipeline(
         .five_bit_muxout(five_bit_muxout)
     );
 
-    // ===========================================================
-    // MEMORY STAGE
-    // ===========================================================
+
+    // MEMORY module
     memory memory_wb_stage(
         .clk            (clk),
         .branch         (branch),
@@ -148,11 +138,8 @@ module mips_pipeline(
         .mem_write_reg  (mem_write_reg)
     );
 
-    // ===========================================================
+   
     // WRITE-BACK MUX (MemtoReg)
-    //   sel=1 -> read_data  (load word result)
-    //   sel=0 -> mem_alu_result  (ALU result)
-    // ===========================================================
     mux mem_mux(
         .a_true  (read_data),
         .b_false (mem_alu_result),
