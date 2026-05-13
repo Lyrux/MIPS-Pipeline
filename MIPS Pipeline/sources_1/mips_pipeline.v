@@ -94,7 +94,7 @@ module mips_pipeline(
         // control bundles passed through from ID/EX latch
         .wb_ctl     (id_ex_wb),
         .m_ctl      (id_ex_mem),
-        // individual execute controls sliced from id_ex_execute
+        // individual execute controls parsed from id_ex_execute
         .regdst     (regdst),
         .alusrc     (alusrc),
         .alu_op     (alu_op),
