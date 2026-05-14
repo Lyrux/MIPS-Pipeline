@@ -43,16 +43,18 @@ MIPS Pipeline implementation in Verilog including timing diagrams.
 ## Instruction Fetch Stage Timing Diagram
 <details>
 <summary><strong>View Execute Stage Timing Diagrams</strong></summary>
+  
 ### Hex Representation
-![Execute Decimal Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Fetch%20(hex).png)
+![Execute Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Fetch%20(hex).png)
 
 </details>
 
 ## Instruction Decode Stage Timing Diagram
 <details>
 <summary><strong>View Execute Stage Timing Diagrams</strong></summary>
+  
 ### Hex Representation
-![Decode Decimal Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Decode%20(hex).png)
+![Decode Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Decode%20(hex).png)
 
 </details>
 
@@ -74,7 +76,6 @@ MIPS Pipeline implementation in Verilog including timing diagrams.
 <summary><strong>View Memory Writeback Timing Diagram</strong></summary>
 
 ### Decimal Representation
-
 ![Memory Writeback Decimal Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Memory%20Writeback%20(decimal).png)
 
 </details>
