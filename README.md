@@ -9,6 +9,8 @@ MIPS Pipeline implementation in Verilog including timing diagrams.
 ## Timing Diagrams Table of Contents
 - [MIPS Pipeline Optimization Timing Diagram](#mips-pipeline-optimization-timing-diagram)
 - [MIPS Pipeline Timing Diagram](#mips-pipeline-timing-diagram)
+- [Instruction Fetch Stage Timing Diagram](#instruction-fetch-stage-timing-diagram)
+- [Instruction Decode Stage Timing Diagram](#instruction-decode-stage-timing-diagram)
 - [Execute Stage Timing Diagram](#execute-stage-timing-diagram)
 - [Memory Writeback Stage Timing Diagram](#memory-writeback-stage-timing-diagram)
 
@@ -27,7 +29,6 @@ MIPS Pipeline implementation in Verilog including timing diagrams.
 </details>
 
 ## MIPS Pipeline Timing Diagram
-
 <details>
 <summary><strong>View MIPS Pipeline Timing Diagram</strong></summary>
 
@@ -37,6 +38,21 @@ MIPS Pipeline implementation in Verilog including timing diagrams.
 
 <img width="1548" height="659" alt="unop_sim3" src="https://github.com/user-attachments/assets/e363355e-7e7c-4895-952e-80c0b6ae48e3" />
 
+</details>
+
+## Instruction Fetch Stage Timing Diagram
+<details>
+<summary><strong>View Execute Stage Timing Diagrams</strong></summary>
+### Hex Representation
+![Execute Decimal Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Fetch%20(hex).png)
+
+</details>
+
+## Instruction Decode Stage Timing Diagram
+<details>
+<summary><strong>View Execute Stage Timing Diagrams</strong></summary>
+### Hex Representation
+![Decode Decimal Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Decode%20(hex).png)
 
 </details>
 
@@ -46,17 +62,14 @@ MIPS Pipeline implementation in Verilog including timing diagrams.
 <summary><strong>View Execute Stage Timing Diagrams</strong></summary>
 
 ### Binary Representation
-
 ![Execute Binary Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Execute%20(binary).png)
 
 ### Decimal Representation
-
 ![Execute Decimal Timing Diagram](Timing%20Diagrams/Timing%20Diagram%20-%20Execute%20(decimal).png)
 
 </details>
 
 ## Memory Writeback Stage Timing Diagram
-
 <details>
 <summary><strong>View Memory Writeback Timing Diagram</strong></summary>
 
